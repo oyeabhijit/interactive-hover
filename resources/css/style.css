@@ -1,0 +1,68 @@
+/*-------------------------------------------------------------*/
+/*PAGE PROGRAM   SETUP*/
+/*-------------------------------------------------------------*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    background-color: #fff;
+    color: #555;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    text-rendering: optimizeLegibility;
+}
+
+.row {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+/*-------------------------------------------------------------*/
+/*HEADINGS*/
+/*-------------------------------------------------------------*/
+
+h1 {
+    margin: 0;
+    margin-bottom: 20px;
+    color: #a78d56;
+    font-size: 200%;
+    font-weight: 700;
+    letter-spacing: 2px;
+    word-spacing: 4px;
+}
+
+/*-------------------------------------------------------------*/
+/*HEADER*/
+/*-------------------------------------------------------------*/
+
+header {
+    background-image: url(images/hero.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    margin-left: 460px;
+}
+
+/*-------------------------------------------------------------*/
+/*Navigation Bar*/
+/*-------------------------------------------------------------*/
+
+.logo {
+    height: 20px;
+    width: auto;
+    float: left;
+    margin-top: 80px;
+    margin-left: 60px;
+}
+
+.info {
+    height: 14px;
+    width: 14px;
+    float: right;
+    margin-top: 85px;
+    margin-right: 1145px;
+}
