@@ -1,68 +1,67 @@
-/*-------------------------------------------------------------*/
-/*PAGE PROGRAM   SETUP*/
-/*-------------------------------------------------------------*/
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  cursor: none;
 }
 
-html {
-    background-color: #fff;
-    color: #555;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 300;
-    font-size: 20px;
-    text-rendering: optimizeLegibility;
+body {
+  overflow: hidden;
+  background: #ffffff;
+  height: 100vh; 
 }
-
-.row {
-    max-width: 1140px;
-    margin: 0 auto;
-}
-
-/*-------------------------------------------------------------*/
-/*HEADINGS*/
-/*-------------------------------------------------------------*/
-
-h1 {
-    margin: 0;
-    margin-bottom: 20px;
-    color: #a78d56;
-    font-size: 200%;
-    font-weight: 700;
-    letter-spacing: 2px;
-    word-spacing: 4px;
-}
-
-/*-------------------------------------------------------------*/
-/*HEADER*/
-/*-------------------------------------------------------------*/
-
-header {
-    background-image: url(images/hero.jpg);
-    background-size: cover;
-    background-position: center;
-    height: 100vh;
-    margin-left: 460px;
-}
-
-/*-------------------------------------------------------------*/
-/*Navigation Bar*/
-/*-------------------------------------------------------------*/
 
 .logo {
-    height: 20px;
-    width: auto;
-    float: left;
-    margin-top: 80px;
-    margin-left: 60px;
+    font-family: 'Noto Sans TC', sans-serif;
+	min-height: 100vh;
+    font-weight: 500;
+    letter-spacing: -1px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column; 
+    color: #282828;
+    font-size: 60px;
 }
 
 .info {
-    height: 14px;
-    width: 14px;
-    float: right;
-    margin-top: 85px;
-    margin-right: 1145px;
+    font-family: 'Noto Sans TC', sans-serif;
+    font-weight: 400;
+    color: #3e3e3e;
+}
+
+
+.btn:link, 
+.btn:visited {
+    padding: 2px 0;
+    color: #282828;
+    padding: 10px 30px;
+    text-decoration: none;
+    font-size: 18px;
+    border-bottom: 1px solid transparent;
+    transition: border-bottom 0.5s;
+}
+
+span {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  position: absolute;
+  pointer-events: none;
+  background: #55b9f3;
+  transform: translate(-50%, -50%);
+  animation: blow 4s linear infinite;
+}
+
+
+@keyframes blow {
+  0% {
+    transform: translate(-50%, -50%);
+    opacity: 1;
+    filter: hue-rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, -1000%);
+    opacity: 0;
+    filter: hue-rotate(720deg);
+  }
 }
