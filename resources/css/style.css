@@ -6,7 +6,7 @@
 
 body {
   overflow: hidden;
-  background: #ffffff;
+  background: #1d1d1d;
   height: 100vh; 
 }
 
@@ -19,21 +19,21 @@ body {
 	align-items: center;
 	justify-content: center;
 	flex-direction: column; 
-    color: #282828;
+    color: #ddd;
     font-size: 60px;
 }
 
 .info {
     font-family: 'Noto Sans TC', sans-serif;
     font-weight: 400;
-    color: #3e3e3e;
+    color: #ddd;
 }
 
 
 .btn:link, 
 .btn:visited {
     padding: 2px 0;
-    color: #282828;
+    color: #ddd;
     padding: 10px 30px;
     text-decoration: none;
     font-size: 18px;
